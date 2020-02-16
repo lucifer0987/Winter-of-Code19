@@ -62,7 +62,7 @@ public class clubHomeActivity extends AppCompatActivity {
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("Users").child(firebaseUser.getUid());
 
-        for(int i = 0; i < 10; i++){
+        for(int i = 0; i < 3; i++){
             Toast.makeText(clubHomeActivity.this, "We will get it ready in 5 seconds. Till that, read about the app in the info section.", Toast.LENGTH_LONG).show();
         }
 
